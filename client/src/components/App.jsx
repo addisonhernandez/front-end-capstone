@@ -10,6 +10,8 @@ import ProductContext from './Context';
 function App() {
   const [productId, setProductId] = useState(38321);
   const [productInfo, setProductInfo] = useState({});
+  const [combinedAPIDetails, setCombinedAPIDetails] = useState([]);
+  const [yourOutfit, setYourOutfit] = useState([]);
 
   const memoizedState = useMemo(
     () => ({
@@ -17,6 +19,10 @@ function App() {
       setProductId,
       productInfo,
       setProductInfo,
+      combinedAPIDetails,
+      setCombinedAPIDetails,
+      yourOutfit,
+      setYourOutfit,
     }),
     [productId, productInfo],
   );

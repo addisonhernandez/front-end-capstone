@@ -43,6 +43,12 @@ const ProductContext = React.createContext({
     ],
   },
   setProductInfo: () => {},
+
+  combinedAPIDetails: [],
+  setCombinedAPIDetails: () => {},
+
+  yourOutfit: [],
+  setYourOutfit: () => {},
 });
 
 export default ProductContext;
