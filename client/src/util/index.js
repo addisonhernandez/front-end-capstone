@@ -43,3 +43,5 @@ export function questionFilterTest(question, filter) {
 
   return filterRE.test(questionBody) || _.some(answers, (answer) => filterRE.test(answer.body));
 }
+
+export const escapeValue = _.template('<%- value %>');
