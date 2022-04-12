@@ -58,6 +58,9 @@ const StyledEntry = styled.div`
 const StyledAnswer = styled.div`
   display: inline-flex;
   flex-direction: column;
+  max-height: 50vh;
+  overflow-y: auto;
+  width: 95%;
 `;
 
 // TODO: lift this into a styled components file
